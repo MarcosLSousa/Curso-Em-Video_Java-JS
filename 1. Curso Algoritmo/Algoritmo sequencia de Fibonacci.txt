@@ -1,0 +1,30 @@
+Algoritmo "Sequencia de Fibonacci"
+
+Var
+var1, var2, soma, n, cont: inteiro
+R: caractere
+
+Inicio
+Repita
+var1 <- 0
+var2 <- 1
+cont <- 0
+Escreval ("Digite a sequência de números Fibonacci que deseja ver: ")
+Leia (n)
+enquanto (cont < n) faca
+se (cont < 1) então
+   Escreval (var1)
+   Escreval (var2)
+   cont <- cont + 1
+senão
+   soma <- var1 + var2
+   var1 <- var2
+   var2 <- soma
+   Escreval (soma)
+   cont <- cont + 1
+fimse
+fimenquanto
+Escreva ("Deseja continuar? [S/N]")
+Leia (R)
+Ate (R = "N")
+Fimalgoritmo
